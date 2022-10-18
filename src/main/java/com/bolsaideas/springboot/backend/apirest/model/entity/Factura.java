@@ -25,7 +25,7 @@ public class Factura implements Serializable {
 
 
 
-    @JsonIgnoreProperties({"facturas","hibernateLazyInitializer", "handler"})
+    @JsonIgnoreProperties(value={"facturas","hibernateLazyInitializer", "handler"}, allowSetters = true)
     @ManyToOne(fetch = FetchType.LAZY)
     /*opcional si quieremos cambiar el nombre de la tabla foranea si no por defecto sera cliente_id*/
     /*@JoinColumn(name = "cliente_id")*//*nombre de la llave foranea en la tabla facturas*/

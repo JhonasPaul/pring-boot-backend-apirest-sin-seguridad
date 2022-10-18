@@ -1,14 +1,17 @@
 package com.bolsaideas.springboot.backend.apirest;
 
 
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.test.context.junit4.SpringRunner;
 //import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 
 
 @SpringBootApplication
 //public class SpringBootBackendApirestApplication implements CommandLineRunner {
-public class SpringBootBackendApirestApplication {
+public class SpringBootBackendApirestApplication  {
 //    @Autowired
 //    private BCryptPasswordEncoder passwordEncoder;
 

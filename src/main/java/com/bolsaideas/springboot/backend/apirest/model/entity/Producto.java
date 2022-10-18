@@ -1,6 +1,7 @@
 package com.bolsaideas.springboot.backend.apirest.model.entity;
 
 import javax.persistence.*;
+
 import java.io.Serializable;
 
 
@@ -57,6 +58,7 @@ public class Producto implements Serializable {
     public void setCreateAte(Date createAte) {
         this.createAte = createAte;
     }
+
 
     private static final long serialVersionUID = 1L;
 }

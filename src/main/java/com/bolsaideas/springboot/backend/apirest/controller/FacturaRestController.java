@@ -39,4 +39,12 @@ public class FacturaRestController {
     public List<Producto> filtrarProductos(@PathVariable String term){
         return clienteService.findProductoByName(term);
     }
+
+
+    /*1.- CREATE INVOICE, termina --> FacturaService.ts, line 34*/
+    @PostMapping("/facturas")
+    @ResponseStatus(HttpStatus.CREATED)
+    public Factura create(@RequestBody Factura factura) {
+        return clienteService.agregarFactura(factura);
+    }
 }

@@ -51,7 +51,7 @@ public class Cliente implements Serializable {
     private Region region;
 
 
-    @JsonIgnoreProperties({"cliente","hibernateLazyInitializer", "handler"})
+    @JsonIgnoreProperties(value = {"cliente","hibernateLazyInitializer", "handler"}, allowSetters = true)
                                     /*atributo de la tabla hijo "cliente" de la clase factura*/
     @OneToMany(fetch = FetchType.LAZY, mappedBy = "cliente", cascade = CascadeType.ALL)
     private List<Factura> facturas;
