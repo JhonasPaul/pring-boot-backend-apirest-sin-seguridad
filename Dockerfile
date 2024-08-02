@@ -1,4 +1,4 @@
-FROM eclipse-temurin:17-jdk-jammy as builder
+FROM eclipse-temurin:17-jdk-jammy AS builder
 
 #ruta de trabajo
 WORKDIR /app/spring-boot-backend-apirest
